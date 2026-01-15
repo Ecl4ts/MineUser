@@ -1,4 +1,4 @@
-import requests
+import requests # Requires "pip install"
 import time
 
 print('='*24)
