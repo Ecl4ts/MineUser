@@ -42,10 +42,13 @@ def Main():
             print(f'UUID for {User} is {Username["id"]}')
         time.sleep(4)
         Main()
-    elif Selection == '8':
+    elif int(Selection) == 8:
         exit('Shut down by user.')
-    elif Selection <= '8':
+    elif int(Selection) <= 8:
         print('Feature is coming soon.')
+        Main()
+    elif int(Selection) <= 1:
+        print('Invalid selection.')
         Main()
     else:
         print('Invalid selection.')
